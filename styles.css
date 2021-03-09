@@ -21,7 +21,7 @@
     position: absolute;
     z-index: 0;
     background-image: url("back.jpg");
-    background-color: #e6e6e6;
+    background-color: #000000;
     background-size: cover;
     background-position: 60% 50%;
     height: 100%;
