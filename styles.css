@@ -1,0 +1,300 @@
+@font-face { font-family: D-DIN; src: url('D-DIN.otf'); } 
+@font-face { font-family: D-DIN; font-weight: bold; src: url('D-DIN-Bold.otf');}
+
+#cabecera{
+    position: relative;
+    font-size: 1.5vw;
+    min-height: 100vh;
+    
+    overflow:hidden;
+}
+
+.cabecera-evento{
+    position: relative;
+    font-size: 1.5vw;
+    min-height: 50vh;
+    
+    overflow:hidden;
+}
+
+#cabecera-background{
+    position: absolute;
+    z-index: 0;
+    background-image: url("back.jpg");
+    background-color: #e6e6e6;
+    background-size: cover;
+    background-position: 60% 50%;
+    height: 100%;
+    width: 100%;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+#logo{
+    position: relative;
+    width: 6%;
+    float: left;
+    margin: 0% 1% 0% 1%;
+}
+
+#menu{
+    position: fixed;
+    z-index: 2;
+    color: #1f1f1fe0;
+    background-image: linear-gradient(#000000ec, #00000065);
+    width: 100%;
+}
+
+#empresa{
+    position: relative;
+    text-align: center;
+    max-width:50%;
+    font-size: 80%;
+    right: 5%;
+    float: right;
+    line-height: 0.2;
+    color: rgba(255, 255, 255, 0.219);
+}
+
+#opciones{
+    position: relative;
+    color: white;
+    margin-top: 2%;
+    padding-left: 10%;
+}
+
+.opcion{
+    margin-right: 2%;
+    text-align: center;
+    font-size: 80%;
+    color: white;
+}
+
+#introduccion {
+    color: white;
+    background-color: #000000a4;
+    position: absolute;
+    text-align: left;
+    padding: 0% 5% 3% 5%;
+    width: 50%;
+    line-height: 1;
+    font-size: 160%;
+    top: 30%;
+    right: 0%;
+
+    animation-name: slide;
+    animation-duration: 1s;
+}
+
+.introduccion-evento {
+    color: white;
+    background-color: #000000a4;
+    position: absolute;
+    text-align: left;
+    padding: 0% 5% 3% 2%;
+    width: 45%;
+    height: 30%;
+    bottom: 0%;
+    left: 0%;
+
+    animation-name: slide-evento;
+    animation-duration: 1s;
+}
+
+.background-evento{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#quote{
+    color: white;
+    position: absolute;
+    text-align: left;
+    padding: 2%;
+    font-size: 1vw;
+    bottom: 3%;
+
+    animation-name: quoteSlide;
+    animation-duration: 2s;
+}
+
+#quoteAuthor{
+    color: white;
+    position: absolute;
+    padding-left: 5%;
+    font-size: 1vw;
+    bottom: 2%;
+
+    animation-name: quoteSlide;
+    animation-duration: 2.2s;
+}
+
+#presentacion{
+    text-align: center;
+    animation: zooming 20s alternate infinite ease-in-out;
+    background-color: #000000;
+    padding: 10% 25% 10% 25%;
+    font-size: 3.4vh;
+    min-height: 60vh;
+    background-image: url("turismo.jpg");
+    background-size: 100%;
+    overflow: hidden;
+    background-position: 100%;
+}
+
+@keyframes quoteSlide {
+    0% {opacity: 0%; left: -5%;}
+    70% {opacity: 0%; left: -5%;}
+    100% {opacity: 100%; left: 0%;}
+}
+
+@keyframes slide {
+    0% {opacity: 0%; right: 5%;}
+    100% {opacity: 100%; right: 0%;}
+}
+
+@keyframes slide-evento {
+    0% {opacity: 0%; left: 5%;}
+    100% {opacity: 100%; left: 0%;}
+}
+
+@keyframes fade {
+    0% {opacity: 0%;}
+    40% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+@keyframes zooming {
+    50%{ 
+        background-size: 110%;
+        background-position: 50%;
+    }
+}
+
+#titulo-eventos{
+    margin: 0;
+    font-size: 5vw;
+    width:90vw;
+    padding-left: 1%;
+    background-color: black;
+}
+
+#eventos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #060606;
+    border-radius: 15px;
+    padding: 2% 2% 2% 2%;
+    margin:0;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.evento {
+    border-radius: 10% 10% 0% 10%;
+    min-height: 30vh;
+    margin: 2%;
+    overflow: hidden;
+    position: relative;
+    font-size: 1.5vw;
+}
+
+.fecha-evento{
+    font-weight: bold;
+    position: absolute;
+    text-align: left;
+    padding: 2%;
+    border-radius: 10px;
+    background-color: #00000070;
+    top: 5%;
+    left: 5%;
+    font-size: 2vh;
+    z-index:1;
+    pointer-events:none;
+}
+
+.nombre-evento{
+    position: absolute;
+    text-align: left;
+    padding: 0% 10% 5% 5%;
+    bottom: 0%;
+    z-index:1;
+    pointer-events:none;
+}
+
+.fondo-evento{
+    background-image: linear-gradient(#00000015, #000000f8);
+    color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    pointer-events:none;
+}
+
+.evento img{
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.2s;
+
+    bottom: -15%;
+}
+
+.evento img:hover {
+    transform: scale(1.05);
+}
+
+html, body{
+    background-color: black;
+    font-family: D-DIN;
+    color: white;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+aside{
+    float: right;
+    padding: 0.5%;
+    font-size: 0.9vw;
+    width: 30%;
+    background-color: rgb(0, 0, 0);
+}
+
+li a{
+    font-size: 1vw;
+    color: white;
+}
+
+footer{
+    text-align: center;
+    background-image: linear-gradient(#00000000, #0f0f0ff8,#0f0f0f);
+    color: #b6b6b6;
+    font-size: 1vw;
+    padding: 1% 1% 1.5% 1%;
+    
+}
+
+#contacto{}
+
+footer h2{
+    text-align: left;
+    color: #ffffff28;
+    font-size: 7vw;
+
+    line-height: 40%;
+}
+
+footer p{
+    text-align: left;
+    font-size: 1.2vw;
+}
+
+hr{
+    background-color: black;
+}
