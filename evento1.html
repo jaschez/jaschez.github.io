@@ -66,6 +66,10 @@
                 <a href="/evento1_imprimir.html"><img src = "imp.png"/></a>
             </article>
 
+            <div class = "btncomentarios">
+                <button type = "button" onclick="VisibilidadComentarios()">Mostrar/Ocultar Comentarios</button>
+            </div>
+
             <div class= "formulario-comentario">
                 <h4>Escribir un comentario...</h4>
                 <label for="fname">Nombre:</label><br>
@@ -73,12 +77,14 @@
                 <label for="fmail">E-mail:</label><br>
                 <input type="text" id="fmail" name="fmail"><br>
                 <label for="ftext">Texto:</label>
-                <textarea id="ftext" name="ftext" rows="4" cols="50"></textarea>
+                <textarea id="ftext" name="ftext" rows="4" cols="50" oninput="updateText()"></textarea>
 
-                <button type = "button" onClick="botonPulsado()">Enviar</button>
+                <div>
+                    <button type = "button" onclick="botonPulsado()">Enviar</button>
+                </div>
             </div>
 
-            <div class="comentarios">
+            <div id="comentarios">
                 <div class="comentario">
                     <div class="author-comentario">
                         Peralta

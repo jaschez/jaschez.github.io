@@ -429,14 +429,15 @@ hr{
     background-color: black;
 }
 
-.comentarios{
-
+#comentarios{
+    overflow: hidden;
 }
 
 .comentario{
     background-color: #222222;
     margin-bottom: 1%;
     border-radius: 10px;
+    min-width: 100%;
 }
 
 .author-comentario{
@@ -473,7 +474,6 @@ hr{
 .formulario-comentario h4{
     color: #535353;
     padding-top: 1%;
-    sudo apt install rpcbind
 }
 
 .formulario-comentario input{
@@ -483,8 +483,10 @@ hr{
     border-radius: 20px;
     padding-left: 5px;
     padding-bottom: 5px;
+    width: 20%;
     border-color: #181818;
     color: white;
+    height: 1.8em;
 }
 
 .formulario-comentario textarea{
@@ -498,9 +500,46 @@ hr{
     color: white;
     resize: none;
     min-width: 90%;
+    font-family: D-DIN;
 }
 
 .formulario-comentario label{
     min-width:100%;
     float: left;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.formulario-comentario button{
+    background-color: #0e0e0e;
+    font-size: 0.8em;
+    color: white;
+    padding: 1%;
+    margin-top: 2%;
+    border-style: none;
+    border-radius: 20px;
+    width: 15%;
+    transition: 0.2s;
+}
+
+.formulario-comentario button:hover {
+    background-color: #252525;
+    cursor: pointer;
+}
+
+.btncomentarios button{
+    background-color: #0e0e0e;
+    font-size: 0.8em;
+    color: white;
+    padding: 1%;
+    margin-top: 2%;
+    border-style: none;
+    border-radius: 20px;
+    width: 30%;
+    transition: 0.2s;
+}
+
+.btncomentarios button:hover {
+    background-color: #252525;
+    cursor: pointer;
 }
