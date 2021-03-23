@@ -8,6 +8,8 @@
     </head>
 
     <body>
+        <script src = "script.js" defer></script>
+
         <header class = "cabecera-evento">
             <img src = "img9.jpg" class = "background-evento"/>
             <div id = "menu">
@@ -63,6 +65,48 @@
                 <a href="https://www.facebook.com"><img src = "tw.png"/></a>
                 <a href="/evento1_imprimir.html"><img src = "imp.png"/></a>
             </article>
+
+            <div class= "formulario-comentario">
+                <h4>Escribir un comentario...</h4>
+                <label for="fname">Nombre:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="fmail">E-mail:</label><br>
+                <input type="text" id="fmail" name="fmail"><br>
+                <label for="ftext">Texto:</label>
+                <textarea id="ftext" name="ftext" rows="4" cols="50"></textarea>
+
+                <button type = "button" onClick="botonPulsado()">Enviar</button>
+            </div>
+
+            <div class="comentarios">
+                <div class="comentario">
+                    <div class="author-comentario">
+                        Peralta
+                    </div>
+
+                    <div class="fecha-comentario">
+                        18/12/09 a las 13:02
+                    </div>
+
+                    <div class="texto-comentario">
+                        Lalsdl sxkodnsdfcbn sdobnapñcjbnpcñinbcnñpochposahncopsn pñoahnpcoihnas`cnhdj`condsoh c`shnoòcnò asjfoisdjofj sdlkfjls dkjflskdjflsdkjfl skdjfsdjifjpioewj ldsmckmcmznxlkfjpoidjfij
+                    </div>
+                </div>
+                
+                <div class="comentario">
+                    <div class="author-comentario">
+                        Peralta
+                    </div>
+
+                    <div class="fecha-comentario">
+                        18/12/09 a las 13:02
+                    </div>
+
+                    <div class="texto-comentario">
+                        Lalsdl sxkodnsdfcbn sdobnapñcjbnpcñinbcnñpochposahncopsn pñoahnpcoihnas`cnhdj`condsoh c`shnoòcnò asjfoisdjofj sdlkfjls dkjflskdjflsdkjfl skdjfsdjifjpioewj ldsmckmcmznxlkfjpoidjfij
+                    </div>
+                </div>
+            </div>
         </section>
 
         <footer id="contacto">
