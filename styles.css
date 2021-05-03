@@ -58,20 +58,18 @@ html{
 
 .descripcion{
     font-size: 3vw;
-    padding-left: 30%;
-    padding-right: 30%;
-    margin-bottom: 50vh;
-    margin-top: 40vh;
-    padding: 5%;
+    height: 100vh;
+
 }
 
 .background{
+    position:absolute;
     background-color:rgba(0, 0, 0, 0.699);
-    width:100vw;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    bottom:10vh;
+    width:25vw;
+    height:10vw;
+    padding-top: 2%;
+    padding-left: 2%;
+    margin-top: 45vh;
 }
 
 .foto{
