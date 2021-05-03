@@ -2,147 +2,47 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta charSet="utf-8"/>
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portada</title>
         <link rel="stylesheet" href="styles.css"/>
     </head>
 
     <body>
+
+        <video autoplay muted loop id="myVideo">
+            <source src="rain.mp4" type="video/mp4">
+        </video>
+
         <header id = "cabecera">
-            <div id = "cabecera-background"></div>
-            <div id = "menu">
-
-                <img src = "tri.png" id="logo"/>
-
-                <div id= "empresa">
-                    <h1>INFINITY</h1>
-                    <p>TURISMO ASTRONÓMICO</p>
-                </div>
-
-                <div id = "opciones">
-                    <a href="#" class = "opcion">INICIO</a>
-                    <a href="#presentacion" class = "opcion">¿QUIENES SOMOS?</a>
-                    <a href="#titulo-eventos" class = "opcion">EVENTOS</a>
-                    <a href="#contacto" class = "opcion">CONTACTO</a>
-                </div>
-
-            </div>
             
-            <div id = "introduccion">
-                <h1>COMIENZA UN VIAJE ÚNICO</h1>
-                DESCUBRE EL UNIVERSO
-            </div>
-
-            <div id = "quote">
-                <em>"SOMOS POLVO DE ESTRELLAS QUE PIENSA ACERCA DE LAS ESTRELLAS"</em>
-            </div>
-
-            <div id = "quoteAuthor">
-                <em><h5>-CARL SAGAN</h5></em>
-            </div>
         </header>
 
         <div id = "presentacion">
 
-            <h1>¿QUIENES SOMOS?</h1>
-
-            <p>
-                UBICADOS EN LA CIUDAD DE ANDÚJAR (JAÉN), <em>INFINITY</em> ES UNA AGENCIA DE ASTROTURISMO ESPECIALIZADA EN
-                LA ORGANIZACIÓN DE EVENTOS QUE PERMITA ACERCAR EL ESPACIO EXTERIOR A PÚBLICO DE TODAS LAS EDADES.
-            </p>
-
-            <p>
-                OFRECEMOS UNA EXPERIENCIA FASCINANTE Y SATISFACTORIA, QUE HARÁ RECORDAR A LA GENTE LO DIMINUTOS
-                QUE PARECEMOS SER FRENTE A LA VASTEDAD DEL ESPACIO.
-            </p>
-
-            <p>
+            <div class = "descripcion">
                 PRESENTAMOS SENSACIONES ÚNICAS QUE QUERRÁS VOLVER A DISFRUTAR, SEA EN FAMILIA O CON AMIGOS.
-            </p>
+            </div>
+
+            <div class = "foto">
+                <img src = "imgs/foto1.png">
+            </div>
         </div>
 
-        <hr/>
-
         <section>
-            <h1 id="titulo-eventos">EVENTOS<h1>
+
         </section>
 
         <aside>
-            <strong>ACERCAMOS LA INFINIDAD DEL ESPACIO A TRAVÉS DE LAS REDES</strong>
-            <ul>
-                <li><a href="https://www.abc.es/ciencia/astronomia/">SECCION DE ÚLTIMAS NOTICIAS SOBRE ASTRONOMÍA DEL ABC</a></li>
-                <li><a href="https://www.youtube.com/channel/UC52hytXteCKmuOzMViTK8_w">C DE CANAL DE NOTICIAS SOBRE EL C DE COSMOS</a></li>
-                <li><a href="https://www.youtube.com/channel/UC6uKrU_WqJ1R2HMTY3LIx5Q">ÚLTIMAS NOTICIAS SOBRE LANZAMIENTOS</a></li>
-                <li><a href="https://www.youtube.com/watch?v=ZsEBiAahAYM">DRON BASADO EN EL MODELO DEL STARSHIP</a></li>
-                <li><a href="https://www.nasa.gov/perseverance">PÁGINA DEL ROVER PERSEVERANCE DE LA NASA</a></li>
-                <li><a href="https://www.reddit.com/r/Astronomy/">GRUPO DE REDDIT DE ASTRONOMÍA</a></li>
-            </ul>
+
         </aside>
 
         <section>
-            <div id = "eventos">
-                <div class="evento">
-                    <div class="fondo-evento"></div>
-                    <a href="/evento1.html"><img src = "img9.jpg"/></a>
-                    <div class="fecha-evento">23 MAR</div>
-                    <div class="nombre-evento">Salida al Encinarejo y actividades recreativas nocturnas</div>
-                </div>
-                <div class="evento">
-                    <div class="fondo-evento"></div>
-                    <div class="fecha-evento">30 MAR</div>
-                    <div class="nombre-evento">Observación de constelaciones en Sierra Morena por la madrugada</div>
-                    <a href="/evento2.html"><img src = "img2.jpg"/></a>
-                </div>
-                <div class="evento">
-                    <div class="fondo-evento"></div>
-                    <div class="fecha-evento">4 ABR</div>
-                    <div class="nombre-evento">Visita al mirador astronómico de La Aldea de Los Guindos</div>
-                    <a href="#titulo-eventos"><img src = "img3.jpg"/></a>
-                </div>
-                <div class="evento">
-                    <div class="fondo-evento"></div>
-                    <div class="fecha-evento">16 ABR</div>
-                    <div class="nombre-evento">Taller de astronomía en el Palacio de Don Gome</div>
-                    <a href="#titulo-eventos"><img src = "img4.jpg"/></a>
-                </div>
-                <div class="evento">
-                    <div class="fondo-evento"></div>
-                    <div class="fecha-evento">2 MAY</div>
-                    <div class="nombre-evento">Avistamiento de los satélites Starlink por el sendero del Camino Viejo</div>
-                    <a href="#titulo-eventos"><img src = "img5.jpg"/></a>
-                </div>
-                <div class="evento">
-                    <div class="fondo-evento"></div>
-                    <div class="fecha-evento">7 MAY</div>
-                    <div class="nombre-evento">Evento online: directo de la prueba de aterrizaje del SN11, comentada en español</div>
-                    <a href="#titulo-eventos"><img src = "img6.jpg"/></a>
-                </div>  
-                <div class="evento">
-                    <div class="fondo-evento"></div>
-                    <div class="fecha-evento">12 MAY</div>
-                    <div class="nombre-evento">Evento online: directo de la entrevista a Pedro Duque</div>
-                    <a href="#titulo-eventos"><img src = "img7.jpg"/></a>
-                </div>
-                <div class="evento">
-                    <div class="fondo-evento"></div>
-                    <div class="fecha-evento">24 MAY</div>
-                    <div class="nombre-evento">Actividad nocturna de kayak en el embalse del Yeguas</div>
-                    <a href="#titulo-eventos"><img src = "img8.jpg"/></a>
-                </div>
-                <div class="evento">
-                    <div class="fondo-evento"></div>
-                    <div class="fecha-evento">5 JUN</div>
-                    <div class="nombre-evento">Taller de fotografía con drones para aficionados en San Ginés al atardecer</div>
-                    <a href="#titulo-eventos"><img src = "img1.jpg"/></a>
-                </div>
-            </div>
+
         </section>
 
         <footer id="contacto">
-           <h2>CONTACTO</h2>
-           <p>Teléfono de atención al cliente: +34 857349865</p>
-           <p>Correo de contacto: jasansu@correo.ugr.es</p>
-           <hr/>
             &copy 2021 JOSÉ ANTONIO SÁNCHEZ SUÁREZ
         </footer>
     </body>
