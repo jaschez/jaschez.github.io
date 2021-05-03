@@ -8,20 +8,38 @@
     font-display: swap;
 }
 
+body{
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 header{
 
 }
 
+#presentacion{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
 #myVideo {
-    position: fixed;
-    right: 0;
+    position: absolute;
+    z-index: -1;
+    height: auto;
+    width: 100vw;
+    margin: auto;
+    top: 0;
     bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+    right: 0;
+    left: 0;  
 }
 
 html{
-    background-color: #25272b;
+    background-color: #0e0e0e;
     font-family: VCR OSD Mono;
     color: #eeeeee;
     margin: 0;
@@ -39,12 +57,22 @@ html{
 }
 
 .descripcion{
-    text-align: center;
+    font-size: 3vw;
     padding-left: 30%;
     padding-right: 30%;
-    margin-top: 45vw;
-    margin-bottom: 50vw;
-    font-size: 3vw;
+    margin-bottom: 50vh;
+    margin-top: 40vh;
+    padding: 5%;
+}
+
+.background{
+    background-color:rgba(0, 0, 0, 0.699);
+    width:100vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    bottom:10vh;
+}
 
 .foto{
 
