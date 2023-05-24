@@ -53,13 +53,18 @@ html{
     margin-left: auto;
     margin-right: auto;
     margin-top: 8%;
-    margin-bottom: 12%;
+    margin-bottom: 4%;
 }
 
 .descripcion{
     font-size: 3vw;
     height: 100vh;
+}
 
+.enlace{
+    font-size: 3vw;
+    text-align: center;
+    margin-bottom: 8%;
 }
 
 .background{
