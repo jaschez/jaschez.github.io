@@ -1,4 +1,7 @@
 [submodule "blastback-ai-editor"]
-	path = blastback-ai-editor
+	path = blastback/ai-editor
 	url = https://github.com/jaschez/blastback_behavior_tree_editor.git
 	branch = gh-pages
+[submodule "blastback/api-reference"]
+	path = blastback/api-reference
+	url = https://github.com/jaschez/blastback-api-reference.git
